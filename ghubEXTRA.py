@@ -17,7 +17,7 @@ script_directory = os.path.dirname(os.path.abspath(__file__))
 
 def run_script(script_path):
     try:
-        subprocess.run(['xfce4-terminal', '--hold', '--working-directory', os.path.dirname(script_path), '--command', f"bash -c '{script_path}; exec bash'"])
+        subprocess.run(['xfce4-terminal', '--hold', '--working-directory', os.path.dirname(script_path), '--command', f"bash -c '{script_path}; exec bash'"], check=True)
     except subprocess.CalledProcessError as e:
         messagebox.showerror(_("Error"), _("An error occurred while running the script: ") + str(e))
 
@@ -85,8 +85,8 @@ button2_label.grid(column=0, row=1, padx=10, pady=10, sticky=tk.W)
 button2_button = ttk.Button(root, text=_("Run"), command=download_and_run_configuration)
 button2_button.grid(column=1, row=1, padx=10, pady=10, sticky=tk.W)
 
-button2_label = ttk.Label(root, text=_("Drivers, export /sbin directory to PATH variable\nDisable sound on logout\nAdd repositories using terminal command\nLanguage configuration"), font=("TkDefaultFont", 12, "bold"), background="#575656", foreground='#000000')
-button2_label.grid(column=2, row=1, padx=10, pady=10, sticky=tk.W)
+button2_label_desc = ttk.Label(root, text=_("Drivers, export /sbin directory to PATH variable\nDisable sound on logout\nAdd repositories using terminal command\nLanguage configuration"), font=("TkDefaultFont", 12, "bold"), background="#575656", foreground='#000000')
+button2_label_desc.grid(column=2, row=1, padx=10, pady=10, sticky=tk.W)
 
 button3_label = ttk.Label(root, text=_("xfce-look"), font=("TkDefaultFont", 15, "bold"), background="#575656", foreground='#ffffff')
 button3_label.grid(column=0, row=2, padx=10, pady=10, sticky=tk.W)
@@ -94,8 +94,8 @@ button3_label.grid(column=0, row=2, padx=10, pady=10, sticky=tk.W)
 button3_button = ttk.Button(root, text=_("Run"), command=xfce_look)
 button3_button.grid(column=1, row=2, padx=10, pady=10, sticky=tk.W)
 
-button3_label = ttk.Label(root, text=_("Themes, wallpapers, icons"), font=("TkDefaultFont", 12, "bold"), background="#575656", foreground='#000000')
-button3_label.grid(column=2, row=2, padx=10, pady=10, sticky=tk.W)
+button3_label_desc = ttk.Label(root, text=_("Themes, wallpapers, icons"), font=("TkDefaultFont", 12, "bold"), background="#575656", foreground='#000000')
+button3_label_desc.grid(column=2, row=2, padx=10, pady=10, sticky=tk.W)
 
 button4_label = ttk.Label(root, text="debian_extra", font=("TkDefaultFont", 15, "bold"), background="#575656", foreground='#ffffff')
 button4_label.grid(column=0, row=3, padx=10, pady=10, sticky=tk.W)
@@ -103,7 +103,7 @@ button4_label.grid(column=0, row=3, padx=10, pady=10, sticky=tk.W)
 button4_button = ttk.Button(root, text=_("Run"), command=extras)
 button4_button.grid(column=1, row=3, padx=10, pady=10, sticky=tk.W)
 
-button4_label = ttk.Label(root, text=_("Codecs, multimedia\nvim, neofetch, etc..."), font=("TkDefaultFont", 12, "bold"), background="#575656", foreground='#000000')
-button4_label.grid(column=2, row=3, padx=10, pady=10, sticky=tk.W)
+button4_label_desc = ttk.Label(root, text=_("Codecs, multimedia\nvim, neofetch, etc..."), font=("TkDefaultFont", 12, "bold"), background="#575656", foreground='#000000')
+button4_label_desc.grid(column=2, row=3, padx=10, pady=10, sticky=tk.W)
 
 root.mainloop()
