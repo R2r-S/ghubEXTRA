@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "Cloning Repository"
+msgstr "Cloning Repository"
+
+msgid "Cloning repository, please wait..."
+msgstr "Cloning repository, please wait..."
+
+msgid "Success"
+msgstr "Success"
+
+msgid "Repository cloned successfully."
+msgstr "Repository cloned successfully."
+
+msgid "Error"
+msgstr "Error"
+
+msgid "An error occurred while running the script: "
+msgstr "An error occurred while running the script: "
+
+msgid "Failed to clone repository: "
+msgstr "Failed to clone repository: "
+
+msgid "Confirmation"
+msgstr "Confirmation"
+
+msgid "Do you want to continue?"
+msgstr "Do you want to continue?"
+
+msgid "Extra Features"
+msgstr "Extra Features"
+
+msgid "Configuration"
+msgstr "Configuration"
+
+msgid "Run"
+msgstr "Run"
+
+msgid "Drivers, export /sbin directory to PATH variable\nDisable sound on logout\nAdd repositories using terminal command\nLanguage configuration"
+msgstr "Drivers, export /sbin directory to PATH variable\nDisable sound on logout\nAdd repositories using terminal command\nLanguage configuration"
+
+msgid "xfce-look"
+msgstr "xfce-look"
+
+msgid "Themes, wallpapers, icons"
+msgstr "Themes, wallpapers, icons"
+
+msgid "debian_extra"
+msgstr "debian_extra"
+
+msgid "Codecs, multimedia\nvim, neofetch, etc..."
+msgstr "Codecs, multimedia\nvim, neofetch, etc..."
