@@ -15,7 +15,7 @@ git clone https://github.com/R2r-S/ghubEXTRA.git
 
 cd ghubEXTRA
 
-python3 ghubEXTRA.py
+./start.sh
 
 
 The program provides a graphical interface to clone and run various configuration scripts for your Debian system.
