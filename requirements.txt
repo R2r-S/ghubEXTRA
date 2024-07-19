@@ -1,1 +1,1 @@
-gitpython tkinter
+gitpython tkinter gettext
