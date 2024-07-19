@@ -40,7 +40,7 @@ def clone_repo(repo_url, download_path):
                 progress_bar.stop()
                 progress_window.destroy()
                 messagebox.showinfo(_("Success"), _("Repository cloned successfully."))
-                run_script(os.path.join(download_path, 'installen.sh'))
+                run_script(os.path.join(download_path, 'install.sh'))
             except Exception as e:
                 progress_bar.stop()
                 progress_window.destroy()
