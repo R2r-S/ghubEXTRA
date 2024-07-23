@@ -7,7 +7,7 @@ This repository contains a Python program with a graphical user interface (GUI) 
 Before running the program, you need to install the following packages:
 
 
-sudo apt install python3-tk python3-git
+sudo apt install python3-tk python3-git gettext
 
 Installation:
 
